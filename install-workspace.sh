@@ -69,23 +69,23 @@ brew install --cask karabiner-elements
 #brew install --cask logseq
 
 
-print_sep "MacOS configs"
+#print_sep "MacOS configs"
 # Dock
-dock_item() {
-    printf '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>%s</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>', "$1"
-}
+#dock_item() {
+#    printf '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>%s</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>', "$1"
+#}
 #defaults delete com.apple.Dock; killall Dock; sleep 2
 #defaults delete com.apple.Dock recent-apps; killall Dock; sleep 2
 #defaults delete com.apple.Dock persistent-others; killall Dock; sleep 2
 #defaults delete com.apple.Dock persistent-apps; killall Dock; sleep 2
-defaults write com.apple.Dock persistent-apps -array \
-    "$(dock_item /Applicathons/Launchpad.app)" \
-    "$(dock_item /Applicathons/iTerm.app)" \
-    "$(dock_item /Applications/Visual\ Studio\ Code.app)" \
-    "$(dock_item /Applications/Slack.app)" \
-    "$(dock_item /Applications/Google\ Chrome.app)" \
-    "$(dock_item /Applications/Notion.app)" \
-killall Dock 
+#defaults write com.apple.Dock persistent-apps -array \
+#    "$(dock_item /Applicathons/Launchpad.app)" \
+#    "$(dock_item /Applicathons/iTerm.app)" \
+#    "$(dock_item /Applications/Visual\ Studio\ Code.app)" \
+#    "$(dock_item /Applications/Slack.app)" \
+#    "$(dock_item /Applications/Google\ Chrome.app)" \
+#    "$(dock_item /Applications/Notion.app)" \
+#killall Dock 
 
 # packages
 # plugins
@@ -93,8 +93,8 @@ killall Dock
 
 
 #tmux
-mkdir -p /usr/local/bin
-sudo cp tmux/ide.sh /usr/local/bin/ide
+#mkdir -p /usr/local/bin
+#sudo cp tmux/ide.sh /usr/local/bin/ide
 
 # karabiner
-cp karabiner/*.json ~/.config/karabiner/assets/complex_modifications/
+#cp karabiner/*.json ~/.config/karabiner/assets/complex_modifications/
