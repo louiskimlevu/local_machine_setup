@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 
 
 function print_sep {
@@ -62,6 +62,8 @@ brew install --cask alfred
 print_sep "Installing font-hack-nerd-font"
 brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font 
+print_sep "Installing karabiner-elements"
+brew install --cask karabiner-elements
 
 #print_sep "Installing logseq"
 #brew install --cask logseq
@@ -88,5 +90,11 @@ killall Dock
 # packages
 # plugins
 # config
+
+
+#tmux
 mkdir -p /usr/local/bin
-sudo cp ide.sh /usr/local/bin/ide
+sudo cp tmux/ide.sh /usr/local/bin/ide
+
+# karabiner
+cp karabiner/*.json ~/.config/karabiner/assets/complex_modifications/

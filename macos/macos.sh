@@ -15,20 +15,15 @@ sudo -v
 
 # Set sidebar icon size to medium
 defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2
-echo "defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 2 \n"
 
 # Disable automatic termination of inactive apps
 defaults write -g NSDisableAutomaticTermination -bool true
-echo "defaults write -g NSDisableAutomaticTermination -bool true \n"
 
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
-echo "defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool
-false \n"
 
 # make menu bar translucent
 defaults write -g AppleEnableMenuBarTransparency -bool true
-echo "defaults write -g AppleEnableMenuBarTransparency -bool true \n"
 
 # Reveal IP address, hostname, OS version, etc. when clicking the clock
 # in the login window
