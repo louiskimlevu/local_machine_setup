@@ -64,7 +64,8 @@ brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font 
 print_sep "Installing karabiner-elements"
 brew install --cask karabiner-elements
-
+print_sep "Installing bettertouchtool"
+brew install --cask bettertouchtool
 #print_sep "Installing logseq"
 #brew install --cask logseq
 
