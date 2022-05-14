@@ -41,6 +41,11 @@ print_sep "Installing z"
 brew install z
 print_sep "Installing tldr"
 brew install tldr
+print_sep "Installing font-hack-nerd-font"
+brew tap homebrew/cask-fonts
+brew install font-hack-nerd-font 
+print_sep "Instalgin homeshick"
+brew install homeshick
 
 print_sep "Installing GUI apps"
 print_sep "Installing iterm2"
@@ -59,9 +64,7 @@ print_sep "Installing clipy"
 brew install --cask clipy 
 print_sep "Installing alfred"
 brew install --cask alfred
-print_sep "Installing font-hack-nerd-font"
-brew tap homebrew/cask-fonts
-brew install font-hack-nerd-font 
+
 print_sep "Installing karabiner-elements"
 brew install --cask karabiner-elements
 print_sep "Installing bettertouchtool"
