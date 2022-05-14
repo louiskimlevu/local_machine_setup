@@ -44,7 +44,7 @@ brew install tldr
 print_sep "Installing font-hack-nerd-font"
 brew tap homebrew/cask-fonts
 brew install font-hack-nerd-font 
-print_sep "Instalgin homeshick"
+print_sep "Installing homeshick"
 brew install homeshick
 
 print_sep "Installing GUI apps"
