@@ -23,7 +23,6 @@ fi
 print_sep "Installing CLIs"
 print_sep "Installing git"
 brew install git
-print_sep "Installing antigen"
 brew install antigen
 print_sep "Installing tmux"
 brew install tmux
@@ -41,11 +40,10 @@ print_sep "Installing z"
 brew install z
 print_sep "Installing tldr"
 brew install tldr
-print_sep "Installing font-hack-nerd-font"
-brew tap homebrew/cask-fonts
-brew install font-hack-nerd-font 
-print_sep "Installing homeshick"
-brew install homeshick
+print_sep "Installing powerlevel10k"
+brew install romkatv/powerlevel10k/powerlevel10k
+print_sep "Installing chezmoi"
+brew install chezmoi
 
 print_sep "Installing GUI apps"
 print_sep "Installing iterm2"
@@ -57,21 +55,21 @@ brew install --cask google-chrome
 print_sep "Installing notion"
 brew install --cask notion
 print_sep "Installing slack"
-brew install --cask slack 
+brew install --cask slack
 print_sep "Installing istat-menus"
 brew install --cask istat-menus
 print_sep "Installing clipy"
-brew install --cask clipy 
+brew install --cask clipy
 print_sep "Installing alfred"
 brew install --cask alfred
-
 print_sep "Installing karabiner-elements"
 brew install --cask karabiner-elements
 print_sep "Installing bettertouchtool"
 brew install --cask bettertouchtool
-#print_sep "Installing logseq"
-#brew install --cask logseq
-
+print_sep "Installing whatsapp"
+brew install --cask whatsapp
+print_sep "Installing bartender"
+brew install --cask bartender
 
 #print_sep "MacOS configs"
 # Dock
@@ -89,7 +87,7 @@ brew install --cask bettertouchtool
 #    "$(dock_item /Applications/Slack.app)" \
 #    "$(dock_item /Applications/Google\ Chrome.app)" \
 #    "$(dock_item /Applications/Notion.app)" \
-#killall Dock 
+#killall Dock
 
 # packages
 # plugins
@@ -102,3 +100,6 @@ brew install --cask bettertouchtool
 
 # karabiner
 #cp karabiner/*.json ~/.config/karabiner/assets/complex_modifications/
+
+# iterm2
+#mkdir -p ~/iterm2_profile
