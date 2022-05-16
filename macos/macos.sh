@@ -359,13 +359,13 @@ defaults write NSGlobalDomain com.apple.scrollwheel.scaling -float 0.1265
 # ===========================
 
 # Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
-# defaults write com.apple.screencapture type -string "png"
+defaults write com.apple.screencapture type -string "png"
 
 # Disable shadow in screenshots
-# defaults write com.apple.screencapture disable-shadow -bool true
+defaults write com.apple.screencapture disable-shadow -bool true
 
 # Save location for the screenshots
-# defaults write com.apple.screencapture location -string "${HOME}/Screenshots"
+defaults write com.apple.screencapture location -string "${HOME}/Screenshots"
 
 # ===========================
 # Finder

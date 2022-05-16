@@ -20,7 +20,7 @@ if [[ $(command -v brew) == "" ]]; then
     sudo chown -R $(whoami) /opt/homebrew
 fi
 
-print_sep "Installing CLIs"
+print_sep "Installing Terminal tools"
 print_sep "Installing git"
 brew install git
 brew install antigen
@@ -42,6 +42,13 @@ print_sep "Installing tldr"
 brew install tldr
 print_sep "Installing powerlevel10k"
 brew install romkatv/powerlevel10k/powerlevel10k
+
+print_sep "Installing DevOps tools"
+print_sep "Installing terraform"
+brew install terraform
+print_sep "Installing awscli"
+brew install awscli
+
 
 print_sep "Installing GUI apps"
 print_sep "Installing iterm2"
