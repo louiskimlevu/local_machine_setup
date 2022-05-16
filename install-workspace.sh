@@ -42,8 +42,6 @@ print_sep "Installing tldr"
 brew install tldr
 print_sep "Installing powerlevel10k"
 brew install romkatv/powerlevel10k/powerlevel10k
-print_sep "Installing chezmoi"
-brew install chezmoi
 
 print_sep "Installing GUI apps"
 print_sep "Installing iterm2"
