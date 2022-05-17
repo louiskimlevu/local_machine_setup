@@ -61,8 +61,8 @@ print_sep "Installing notion"
 brew install --cask notion
 print_sep "Installing slack"
 brew install --cask slack
-print_sep "Installing istat-menus"
-brew install --cask istat-menus
+#print_sep "Installing istat-menus"
+#brew install --cask istat-menus
 print_sep "Installing clipy"
 brew install --cask clipy
 print_sep "Installing alfred"
@@ -76,28 +76,9 @@ brew install --cask whatsapp
 print_sep "Installing bartender"
 brew install --cask bartender
 
-#print_sep "MacOS configs"
-# Dock
-#dock_item() {
-#    printf '<dict><key>tile-data</key><dict><key>file-data</key><dict><key>_CFURLString</key><string>%s</string><key>_CFURLStringType</key><integer>0</integer></dict></dict></dict>', "$1"
-#}
-#defaults delete com.apple.Dock; killall Dock; sleep 2
-#defaults delete com.apple.Dock recent-apps; killall Dock; sleep 2
-#defaults delete com.apple.Dock persistent-others; killall Dock; sleep 2
-#defaults delete com.apple.Dock persistent-apps; killall Dock; sleep 2
-#defaults write com.apple.Dock persistent-apps -array \
-#    "$(dock_item /Applicathons/Launchpad.app)" \
-#    "$(dock_item /Applicathons/iTerm.app)" \
-#    "$(dock_item /Applications/Visual\ Studio\ Code.app)" \
-#    "$(dock_item /Applications/Slack.app)" \
-#    "$(dock_item /Applications/Google\ Chrome.app)" \
-#    "$(dock_item /Applications/Notion.app)" \
-#killall Dock
-
 # packages
 # plugins
 # config
-
 
 #tmux
 #mkdir -p /usr/local/bin
@@ -105,6 +86,3 @@ brew install --cask bartender
 
 # karabiner
 #cp karabiner/*.json ~/.config/karabiner/assets/complex_modifications/
-
-# iterm2
-#mkdir -p ~/iterm2_profile
