@@ -5,7 +5,6 @@ function print_sep {
   printf "\n"
   echo "---------- $1 -----------"
 }
-
 print_sep "Sudoing"
 # sudo refresh
 sudo -v
@@ -40,6 +39,9 @@ print_sep "Installing z"
 brew install z
 print_sep "Installing tldr"
 brew install tldr
+print_sep "Installing diff-so-fancy"
+brew install diff-so-fancy
+
 print_sep "Installing powerlevel10k"
 brew install romkatv/powerlevel10k/powerlevel10k
 
