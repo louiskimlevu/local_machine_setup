@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 function print_sep {
   printf "\n"
   echo "---------- $1 -----------"
@@ -41,7 +40,8 @@ print_sep "Installing tldr"
 brew install tldr
 print_sep "Installing diff-so-fancy"
 brew install diff-so-fancy
-
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
 print_sep "Installing powerlevel10k"
 brew install romkatv/powerlevel10k/powerlevel10k
 
@@ -50,7 +50,6 @@ print_sep "Installing terraform"
 brew install terraform
 print_sep "Installing awscli"
 brew install awscli
-
 
 print_sep "Installing GUI apps"
 print_sep "Installing iterm2"
@@ -67,8 +66,6 @@ brew install --cask slack
 #brew install --cask istat-menus
 print_sep "Installing clipy"
 brew install --cask clipy
-print_sep "Installing alfred"
-brew install --cask alfred
 print_sep "Installing karabiner-elements"
 brew install --cask karabiner-elements
 print_sep "Installing bettertouchtool"
@@ -77,7 +74,6 @@ print_sep "Installing whatsapp"
 brew install --cask whatsapp
 print_sep "Installing bartender"
 brew install --cask bartender
-
 # packages
 # plugins
 # config
@@ -88,3 +84,34 @@ brew install --cask bartender
 
 # karabiner
 #cp karabiner/*.json ~/.config/karabiner/assets/complex_modifications/
+
+## git config
+git config --global user.name "louiskim"
+git config --global user.email louiskim.levu@gmail.com
+## aliases
+git config --global alias.a 'add --verbose'
+git config --global alias.s 'status --untracked-files --short --branch'
+git config --global alias.l 'log --oneline'
+git config --global alias.sh 'show'
+git config --global alias.d 'diff'
+git config --global alias.co 'checkout'
+git config --global alias.c 'commit'
+
+## diff-so-fancy
+# https://github.com/so-fancy/diff-so-fancy#usage
+git config --global core.pager "diff-so-fancy | less --tabs=4 -RFX"
+git config --global interactive.diffFilter "diff-so-fancy --patch"
+git config --global color.ui true
+
+git config --global color.diff-highlight.oldNormal    "red bold"
+git config --global color.diff-highlight.oldHighlight "red bold 52"
+git config --global color.diff-highlight.newNormal    "green bold"
+git config --global color.diff-highlight.newHighlight "green bold 22"
+
+git config --global color.diff.meta       "11"
+git config --global color.diff.frag       "magenta bold"
+git config --global color.diff.func       "146 bold"
+git config --global color.diff.commit     "yellow bold"
+git config --global color.diff.old        "red bold"
+git config --global color.diff.new        "green bold"
+git config --global color.diff.whitespace "red reverse"
