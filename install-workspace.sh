@@ -21,6 +21,7 @@ fi
 print_sep "Installing Terminal tools"
 print_sep "Installing git"
 brew install git
+print_sep "Installing antigen"
 brew install antigen
 print_sep "Installing tmux"
 brew install tmux
