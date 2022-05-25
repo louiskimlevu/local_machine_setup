@@ -34,7 +34,7 @@ brew uninstall --cask slack
 brew uninstall --cask istat-menus
 brew uninstall --cask clipy
 brew uninstall --cask alfred
-brew uninstall --cask font-hack-nerd-font 
+brew uninstall --cask font-hack-nerd-font
 
 print_sep "Uninstalling Homebrew"
 if [[ ! $(command -v brew) == "" ]]; then
