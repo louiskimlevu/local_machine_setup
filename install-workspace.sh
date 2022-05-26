@@ -50,6 +50,10 @@ print_sep "Installing DevOps tools"
 print_sep "Installing terraform"
 brew install hashicorp/tap/terraform-ls
 brew install terraform
+print_sep "Installing terraform-ls"
+brew install hashicorp/tap/terraform-ls
+print_sep "Installing node"
+brew install node
 print_sep "Installing awscli"
 brew install awscli
 
