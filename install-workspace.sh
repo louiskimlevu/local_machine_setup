@@ -52,6 +52,8 @@ brew install hashicorp/tap/terraform-ls
 brew install terraform
 print_sep "Installing awscli"
 brew install awscli
+print_sep "Installing node"
+brew install node
 
 print_sep "Installing GUI apps"
 print_sep "Installing iterm2"
