@@ -48,6 +48,7 @@ brew install romkatv/powerlevel10k/powerlevel10k
 
 print_sep "Installing DevOps tools"
 print_sep "Installing terraform"
+brew install hashicorp/tap/terraform-ls
 brew install terraform
 print_sep "Installing awscli"
 brew install awscli
