@@ -45,6 +45,8 @@ brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 print_sep "Installing powerlevel10k"
 brew install romkatv/powerlevel10k/powerlevel10k
+print_sep "Installing neovim"
+brew install neovim
 
 print_sep "Installing DevOps tools"
 print_sep "Installing terraform"
