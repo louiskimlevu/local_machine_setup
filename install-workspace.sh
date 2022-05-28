@@ -82,8 +82,6 @@ print_sep "Installing whatsapp"
 brew install --cask whatsapp
 print_sep "Installing bartender"
 brew install --cask bartender
-print_sep "Installing numi"
-brew install --cask numi
 print_sep "Installing cleanshot"
 brew install --cask cleanshot
 #tmux
