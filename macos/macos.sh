@@ -102,8 +102,10 @@ defaults delete -g ApplePressAndHoldEnabled
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # increase key repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 15
+# normal minimum is 15 (225 ms)
+defaults write -g InitialKeyRepeat -int 10 
+# normal minimum is 2 (30 ms)
+defaults write -g KeyRepeat -int 1 
 
 # see http://hints.macworld.com/article.php?story=20131123074223584
 # see http://osxnotes.net/keybindings.html for valid key chords
