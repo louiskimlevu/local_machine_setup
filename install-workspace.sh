@@ -52,8 +52,6 @@ print_sep "Installing DevOps tools"
 print_sep "Installing terraform"
 brew install hashicorp/tap/terraform-ls
 brew install terraform
-print_sep "Installing terraform-ls"
-brew install hashicorp/tap/terraform-ls
 print_sep "Installing node"
 brew install node
 print_sep "Installing awscli"
@@ -72,8 +70,8 @@ print_sep "Installing notion"
 brew install --cask notion
 print_sep "Installing slack"
 brew install --cask slack
-#print_sep "Installing istat-menus"
-#brew install --cask istat-menus
+print_sep "Installing istat-menus"
+brew install --cask istat-menus
 print_sep "Installing clipy"
 brew install --cask clipy
 print_sep "Installing karabiner-elements"
