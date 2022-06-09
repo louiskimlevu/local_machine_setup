@@ -59,7 +59,7 @@ brew install node
 print_sep "Installing awscli"
 brew install awscli
 print_sep "Installing docker"
-brew install --cask docker
+brew install --cask --no-quarantine docker
 print_sep "Installing kubectl"
 brew install kubectl
 print_sep "Installing kind"
