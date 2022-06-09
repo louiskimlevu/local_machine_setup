@@ -52,12 +52,14 @@ print_sep "Installing DevOps tools"
 print_sep "Installing terraform"
 brew install hashicorp/tap/terraform-ls
 brew install terraform
+print_sep "Installing sentinel"
+brew install --cask sentinel
 print_sep "Installing node"
 brew install node
 print_sep "Installing awscli"
 brew install awscli
-print_sep "Installing sentinel"
-brew install --cask sentinel
+print_sep "Installing docker"
+brew install --cask docker
 print_sep "Installing kubectl"
 brew install kubectl
 print_sep "Installing kind"
