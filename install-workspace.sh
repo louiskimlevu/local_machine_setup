@@ -58,6 +58,10 @@ print_sep "Installing awscli"
 brew install awscli
 print_sep "Installing sentinel"
 brew install --cask sentinel
+print_sep "Installing kubectl"
+brew install kubectl
+print_sep "Installing kind"
+brew install kind
 
 print_sep "Installing GUI apps"
 print_sep "Installing iterm2"
