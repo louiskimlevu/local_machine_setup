@@ -90,6 +90,8 @@ print_sep "Installing bartender"
 brew install --cask bartender
 print_sep "Installing cleanshot"
 brew install --cask cleanshot
+print_sep "Installing ledger-live"
+brew install --cask ledger-live
 #tmux
 #mkdir -p /usr/local/bin
 #sudo cp tmux/ide.sh /usr/local/bin/ide
