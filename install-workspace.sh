@@ -64,6 +64,8 @@ print_sep "Installing kubectl"
 brew install kubectl
 print_sep "Installing kind"
 brew install kind
+print_sep "Installing k9s"
+brew install derailed/k9s/k9s
 
 print_sep "Installing GUI apps"
 print_sep "Installing iterm2"
