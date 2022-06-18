@@ -92,8 +92,6 @@ print_sep "Installing bettertouchtool"
 brew install --cask bettertouchtool
 print_sep "Installing whatsapp"
 brew install --cask whatsapp
-print_sep "Installing bartender"
-brew install --cask bartender
 print_sep "Installing cleanshot"
 brew install --cask cleanshot
 print_sep "Installing ledger-live"
