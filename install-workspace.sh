@@ -62,6 +62,8 @@ print_sep "Installing docker"
 brew install --cask --no-quarantine docker
 print_sep "Installing kubectl"
 brew install kubectl
+print_sep "Installing yh"
+brew install yh
 print_sep "Installing kind"
 brew install kind
 print_sep "Installing k9s"
