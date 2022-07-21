@@ -96,16 +96,16 @@ sudo -v
 # Keyboard
 # =======================
 # VSCode Vim
-defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false             
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults delete -g ApplePressAndHoldEnabled
 
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # increase key repeat rate
 # normal minimum is 15 (225 ms)
-defaults write -g InitialKeyRepeat -int 10 
+defaults write -g InitialKeyRepeat -int 10
 # normal minimum is 2 (30 ms)
-defaults write -g KeyRepeat -int 1 
+defaults write -g KeyRepeat -int 1
 
 # see http://hints.macworld.com/article.php?story=20131123074223584
 # see http://osxnotes.net/keybindings.html for valid key chords
@@ -462,7 +462,7 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
 # defaults write com.apple.ActivityMonitor SortDirection -int 0
 
 # =================================
-# Mac App Store 
+# Mac App Store
 # =================================
 
 # Enable the WebKit Developer Tools in the Mac App Store
