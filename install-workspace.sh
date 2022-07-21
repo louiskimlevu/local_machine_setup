@@ -64,6 +64,8 @@ print_sep "Installing kubectl"
 brew install kubectl
 print_sep "Installing yh"
 brew install yh
+print_sep "Installing jq"
+brew install jq
 print_sep "Installing kind"
 brew install kind
 print_sep "Installing k9s"
@@ -78,6 +80,8 @@ print_sep "Installing iterm2"
 brew install --cask iterm2
 print_sep "Installing visual-studio-code"
 brew install --cask visual-studio-code
+print_sep "Installing Pycharm"
+brew install --cask pycharm-ce
 print_sep "Installing google-chrome"
 brew install --cask google-chrome
 print_sep "Installing notion"
@@ -98,6 +102,8 @@ print_sep "Installing cleanshot"
 brew install --cask cleanshot
 print_sep "Installing ledger-live"
 brew install --cask ledger-live
+
+
 #tmux
 #mkdir -p /usr/local/bin
 #sudo cp tmux/ide.sh /usr/local/bin/ide
