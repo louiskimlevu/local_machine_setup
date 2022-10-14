@@ -168,7 +168,7 @@ defaults write NSGlobalDomain com.apple.scrollwheel.scaling -float 0.1265
 # defaults write com.apple.dock largesize -int 72
 
 # Keep Dock on the right side
-# defaults write com.apple.dock orientation -string "right"
+defaults write com.apple.dock orientation -string "right"
 
 # Show indicator lights for open applications in the Dock
 # defaults write com.apple.dock "show-process-indicators" -int 1
