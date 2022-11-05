@@ -74,14 +74,18 @@ print_sep "Installing kubectx"
 brew install kubectx
 print_sep "Installing helm"
 brew install helm
-
-print_sep "Installing GUI apps"
+print_sep "Installing Lens"
+brew install --cask lens
 print_sep "Installing iterm2"
 brew install --cask iterm2
 print_sep "Installing visual-studio-code"
 brew install --cask visual-studio-code
 print_sep "Installing Pycharm"
 brew install --cask pycharm-ce
+print_sep "Installing Wireshark"
+brew install --cask wireshark
+
+# productivity apps
 print_sep "Installing google-chrome"
 brew install --cask google-chrome
 print_sep "Installing notion"
