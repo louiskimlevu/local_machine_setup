@@ -60,6 +60,8 @@ brew install hashicorp/tap/terraform-ls
 brew install terraform
 print_sep "Installing sentinel"
 brew install --cask sentinel
+print_sep "Installing vault"
+brew install vault
 print_sep "Installing awscli"
 brew install awscli
 print_sep "Installing docker"
@@ -94,6 +96,8 @@ brew install --cask wireshark
 # Productivity
 print_sep "Installing google-chrome"
 brew install --cask google-chrome
+print_sep "Installing firefox"
+brew install --cask firefox
 print_sep "Installing notion"
 brew install --cask notion
 print_sep "Installing slack"
@@ -117,7 +121,8 @@ brew install --cask bettertouchtool
 # others
 print_sep "Installing ledger-live"
 brew install --cask ledger-live
-
+print_sep "Installing keybase"
+brew install --cask keybase
 
 #tmux
 #mkdir -p /usr/local/bin
