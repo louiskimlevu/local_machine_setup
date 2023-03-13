@@ -78,6 +78,8 @@ print_sep "Installing kubectx"
 brew install kubectx
 print_sep "Installing helm"
 brew install helm
+print_sep "Installting microsoft-remote-desktop"
+brew install --cask microsoft-remote-desktop
 
 # Coding
 print_sep "Installing node"
