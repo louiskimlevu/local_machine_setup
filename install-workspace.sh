@@ -36,6 +36,8 @@ print_sep "Installing diff-so-fancy"
 brew install diff-so-fancy
 print_sep "Installing lazygit"
 brew install lazygit
+print_sep "Installing gh"
+brew install gh
 #print_sep "Installing antigen"
 #brew install antigen
 print_sep "Installing tmux"
@@ -66,7 +68,9 @@ brew install romkatv/powerlevel10k/powerlevel10k
 # vim
 print_sep "Installing neovim"
 brew install neovim
-LV_BRANCH='release-1.3/neovim-0.9' bash <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh --install-dependencies -y)
+## lazyvim
+git clone https://github.com/LazyVim/starter ~/.config/nvim
+rm -rf ~/.config/nvim/.git
 
 # devops
 ## hashicorp
