@@ -1,25 +1,30 @@
 #!/bin/bash
 
 function print_sep {
-  printf "\n"
-  echo "---------- $1 -----------"
+	printf "\n"
+	echo "---------- $1 -----------"
 }
 print_sep "Sudoing"
 # sudo refresh
 sudo -v
 # Keep-alive: update existing sudo time stamp if set, otherwise do nothing.
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+while true; do
+	sudo -n true
+	sleep 60
+	kill -0 "$$" || exit
+done 2>/dev/null &
 
-# XCode 
+# XCode
+softwareupdate --install-rosetta --agree-to-license
 xcode-select --install
 
 # brew
 print_sep "Installing Homebrew"
 if [[ $(command -v brew) == "" ]]; then
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
-    eval "$(/opt/homebrew/bin/brew shellenv)"
-    sudo chown -R $(whoami) /opt/homebrew
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >>$HOME/.zprofile
+	eval "$(/opt/homebrew/bin/brew shellenv)"
+	sudo chown -R $(whoami) /opt/homebrew
 fi
 
 # zsh
@@ -106,7 +111,10 @@ print_sep "Installing kubectx"
 brew install kubectx
 print_sep "Installing helm"
 brew install helm
-
+print_sep "Installing minikube"
+brew install minikube
+print_sep "Installing wireshark"
+brew install --cask wireshark
 
 # Programming
 print_sep "Installing node"
@@ -124,7 +132,11 @@ print_sep "Installing Postgresql"
 brew install postgresql
 print_sep "Installing pgadmin4"
 brew install --cask pgadmin4
-
+print_sep "Installing flutter"
+brew install --cask flutter
+print_sep "Installing mas"
+brew install mas
+mas install $(mas search xcode | awk '$2=="Xcode" {print $1}')
 # Networking
 print_sep "Installing Wireshark"
 brew install --cask wireshark
@@ -160,4 +172,3 @@ brew install --cask keybase
 #tmux
 #mkdir -p /usr/local/bin
 #sudo cp tmux/ide.sh /usr/local/bin/ide
-
