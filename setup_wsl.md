@@ -43,16 +43,9 @@ mkdir utils
 cd utils
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-echo "source <(kubectl completion zsh)" >> ~/.zshrc
 sudo git clone https://github.com/ahmetb/kubectx /opt/kubectx
 sudo ln -s /opt/kubectx/kubectx /usr/local/bin/kubectx
 sudo ln -s /opt/kubectx/kubens /usr/local/bin/kubens
-echo "alias kc=kubectx" >> ~/.zshrc
-echo "alias kn=kubens" >> ~/.zshrc
-echo 'PROMPT='$(kube_ps1)' $PROMPT'>> ~/.zshrc
-echo "alias kon=kubeon" >> ~/.zshrc
-echo "alias koff=kubeoff" >> ~/.zshrc
-echo "koff" >> ~/.zshrc
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
