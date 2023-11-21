@@ -59,6 +59,8 @@ print_sep "Installing exa"
 brew install exa
 print_sep "Installing z"
 brew install z
+print_sep "Installing autojump"
+brew install autojump
 print_sep "Installing yh"
 brew install yh
 print_sep "Installing jq"
@@ -115,6 +117,11 @@ print_sep "Installing minikube"
 brew install minikube
 print_sep "Installing wireshark"
 brew install --cask wireshark
+print_sep "Installing istio"
+brew install istioctl
+print_sep "Installing eksctl"
+brew tap weaveworks/tap
+brew install weaveworks/tap/eksctl
 
 # Programming
 print_sep "Installing node"
@@ -154,20 +161,24 @@ print_sep "Installing slack"
 brew install --cask slack
 print_sep "Installing whatsapp"
 brew install --cask whatsapp
-print_sep "Installing discord"
+print_sep "Installing messenger"
+brew install --cask messenger
+# print_sep "Installing discord"
+# brew install --cask discord
+# print_sep "Installing zoom"
+# brew install --cask zoom
 
 # Mac only
-brew install --cask discord
-print_sep "Installing istat-menus"
-brew install --cask istat-menus
-print_sep "Installing clipy"
-brew install --cask clipy
+# print_sep "Installing istat-menus"
+# brew install --cask istat-menus
+# print_sep "Installing clipy"
+# brew install --cask clipy
 print_sep "Installing karabiner-elements"
 brew install --cask karabiner-elements
 print_sep "Installing bettertouchtool"
 brew install --cask bettertouchtool
-print_sep "Installing keybase"
-brew install --cask keybase
+# print_sep "Installing keybase"
+# brew install --cask keybase
 
 #tmux
 #mkdir -p /usr/local/bin
