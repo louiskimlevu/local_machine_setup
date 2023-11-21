@@ -43,6 +43,8 @@ print_sep "Installing lazygit"
 brew install lazygit
 print_sep "Installing gh"
 brew install gh
+print_sep "Installing git-credential-manager"
+brew install --cask git-credential-manager
 #print_sep "Installing antigen"
 #brew install antigen
 print_sep "Installing tmux"
