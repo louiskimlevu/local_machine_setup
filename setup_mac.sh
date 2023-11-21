@@ -107,6 +107,8 @@ print_sep "Installing kubectx"
 brew install kubectx
 print_sep "Installing kube-ps1"
 brew install kube-ps1
+brew list kube-ps1
+chmod +x $(brew list kube-ps1)
 print_sep "Installing kind"
 brew install kind
 print_sep "Installing Lens"
