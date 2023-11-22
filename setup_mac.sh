@@ -17,7 +17,6 @@ done 2>/dev/null &
 # XCode
 softwareupdate --install-rosetta --agree-to-license
 xcode-select --install
-
 # brew
 print_sep "Installing Homebrew"
 if [[ $(command -v brew) == "" ]]; then
@@ -128,8 +127,10 @@ brew install --cask visual-studio-code
 # print_sep "Installing Pycharm"
 # brew install --cask pycharm-ce
 print_sep "Installing pyenv"
-brew install openssl readline sqlite3 xz zlib bzip2
-curl https://pyenv.run | bash
+brew install openssl readline sqlite3 xz zlib bzip2 gcc
+# curl https://pyenv.run | bash
+brew install pyenv
+
 print_sep "Installing node"
 brew install node
 print_sep "Installing Postgresql"
