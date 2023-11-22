@@ -105,10 +105,6 @@ print_sep "Installing kubectl"
 brew install kubectl
 print_sep "Installing kubectx"
 brew install kubectx
-print_sep "Installing kube-ps1"
-brew install kube-ps1
-brew list kube-ps1
-chmod +x $(brew list kube-ps1)
 print_sep "Installing kind"
 brew install kind
 print_sep "Installing Lens"
@@ -136,8 +132,8 @@ print_sep "Installing Postman"
 brew install --cask postman
 print_sep "Installing visual-studio-code"
 brew install --cask visual-studio-code
-print_sep "Installing Pycharm"
-brew install --cask pycharm-ce
+# print_sep "Installing Pycharm"
+# brew install --cask pycharm-ce
 print_sep "Installing pyenv"
 brew install openssl readline sqlite3 xz zlib bzip2
 curl https://pyenv.run | bash
