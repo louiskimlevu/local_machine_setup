@@ -130,6 +130,8 @@ print_sep "Installing pyenv"
 brew install openssl readline sqlite3 xz zlib bzip2 gcc
 # curl https://pyenv.run | bash
 brew install pyenv
+pyenv install 3.6 3.7 3.8 3.9 3.10 -f
+brew install pyenv-virtualenv
 
 print_sep "Installing node"
 brew install node
