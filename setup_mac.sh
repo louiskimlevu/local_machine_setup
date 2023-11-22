@@ -59,8 +59,8 @@ print_sep "Installing bat"
 brew install bat
 print_sep "Installing exa"
 brew install exa
-print_sep "Installing z"
-brew install z
+# print_sep "Installing z"
+# brew install z
 print_sep "Installing autojump"
 brew install autojump
 print_sep "Installing yh"
@@ -82,7 +82,6 @@ git clone https://github.com/LazyVim/starter ~/.config/nvim
 rm -rf ~/.config/nvim/.git
 
 # devops
-## hashicorp
 print_sep "Installing terraform"
 brew install hashicorp/tap/terraform-ls
 brew install terraform
@@ -93,26 +92,25 @@ brew install vault
 print_sep "Installing boundary"
 brew tap hashicorp/tap
 brew install hashicorp/tap/boundary
-## cloud
 print_sep "Installing awscli"
 brew install awscli
 print_sep "Installing aws-sam-cli"
 brew install aws/tap/aws-sam-cli
-## containers
+print_sep "Installing eksctl"
+brew tap weaveworks/tap
+brew install weaveworks/tap/eksctl
 print_sep "Installing docker"
 brew install --cask --no-quarantine docker
 print_sep "Installing kubectl"
 brew install kubectl
 print_sep "Installing kubectx"
 brew install kubectx
+print_sep "Installing k9s"
+brew install derailed/k9s/k9s
 print_sep "Installing kind"
 brew install kind
 print_sep "Installing Lens"
 brew install --cask lens
-print_sep "Installing k9s"
-brew install derailed/k9s/k9s
-print_sep "Installing kubectx"
-brew install kubectx
 print_sep "Installing helm"
 brew install helm
 print_sep "Installing minikube"
@@ -121,13 +119,8 @@ print_sep "Installing wireshark"
 brew install --cask wireshark
 print_sep "Installing istio"
 brew install istioctl
-print_sep "Installing eksctl"
-brew tap weaveworks/tap
-brew install weaveworks/tap/eksctl
 
 # Programming
-print_sep "Installing node"
-brew install node
 print_sep "Installing Postman"
 brew install --cask postman
 print_sep "Installing visual-studio-code"
@@ -137,15 +130,18 @@ brew install --cask visual-studio-code
 print_sep "Installing pyenv"
 brew install openssl readline sqlite3 xz zlib bzip2
 curl https://pyenv.run | bash
+print_sep "Installing node"
+brew install node
 print_sep "Installing Postgresql"
 brew install postgresql
 print_sep "Installing pgadmin4"
 brew install --cask pgadmin4
-print_sep "Installing flutter"
-brew install --cask flutter
-print_sep "Installing mas"
-brew install mas
-mas install $(mas search xcode | awk '$2=="Xcode" {print $1}')
+# print_sep "Installing flutter"
+# brew install --cask flutter
+# print_sep "Installing mas"
+# brew install mas
+# mas install $(mas search xcode | awk '$2=="Xcode" {print $1}')
+
 # Networking
 print_sep "Installing Wireshark"
 brew install --cask wireshark
@@ -156,9 +152,11 @@ brew install --cask google-chrome
 print_sep "Installing firefox"
 brew install --cask firefox
 
-# Personal
+# Notes
 print_sep "Installing notion"
 brew install --cask notion
+
+# Messaging
 print_sep "Installing slack"
 brew install --cask slack
 print_sep "Installing whatsapp"
@@ -183,5 +181,8 @@ brew install --cask bettertouchtool
 # brew install --cask keybase
 
 #tmux
-#mkdir -p /usr/local/bin
-#sudo cp tmux/ide.sh /usr/local/bin/ide
+# mkdir -p /usr/local/bin
+# sudo cp tmux/ide.sh /usr/local/bin/ide
+
+# cleanup
+brew cleanup
