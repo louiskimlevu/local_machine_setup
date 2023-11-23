@@ -84,6 +84,7 @@ rm -rf ~/.config/nvim/.git
 print_sep "Installing terraform"
 brew install hashicorp/tap/terraform-ls
 brew install terraform
+brew install terragrunt
 print_sep "Installing sentinel"
 brew install --cask sentinel
 print_sep "Installing vault"
