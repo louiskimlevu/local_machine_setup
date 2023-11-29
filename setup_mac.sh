@@ -17,6 +17,7 @@ done 2>/dev/null &
 # XCode
 softwareupdate --install-rosetta --agree-to-license
 xcode-select --install
+
 # brew
 print_sep "Installing Homebrew"
 if [[ $(command -v brew) == "" ]]; then
@@ -44,6 +45,8 @@ print_sep "Installing gh"
 brew install gh
 print_sep "Installing git-credential-manager"
 brew install --cask git-credential-manager
+print_sep "Installing commitizen"
+brew install commitizen
 #print_sep "Installing antigen"
 #brew install antigen
 print_sep "Installing tmux"
@@ -70,8 +73,8 @@ print_sep "Installing tldr"
 brew install tldr
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
-print_sep "Installing powerlevel10k"
-brew install romkatv/powerlevel10k/powerlevel10k
+# print_sep "Installing powerlevel10k"
+# brew install romkatv/powerlevel10k/powerlevel10k
 
 # vim
 print_sep "Installing neovim"
@@ -133,7 +136,6 @@ brew install openssl readline sqlite3 xz zlib bzip2 gcc
 brew install pyenv
 pyenv install 3.6 3.7 3.8 3.9 3.10 -f
 brew install pyenv-virtualenv
-
 print_sep "Installing node"
 brew install node
 print_sep "Installing Postgresql"
@@ -184,9 +186,12 @@ brew install --cask bettertouchtool
 # print_sep "Installing keybase"
 # brew install --cask keybase
 
-#tmux
+# tmux (stop using)
 # mkdir -p /usr/local/bin
 # sudo cp tmux/ide.sh /usr/local/bin/ide
+
+# git-cz (using commitizen instead)
+# npm install -g git-cz
 
 # cleanup
 brew cleanup
