@@ -45,8 +45,8 @@ print_sep "Installing gh"
 brew install gh
 print_sep "Installing git-credential-manager"
 brew install --cask git-credential-manager
-print_sep "Installing commitizen"
-brew install commitizen
+# print_sep "Installing commitizen"
+# brew install commitizen
 #print_sep "Installing antigen"
 #brew install antigen
 print_sep "Installing tmux"
@@ -190,8 +190,8 @@ brew install --cask bettertouchtool
 # mkdir -p /usr/local/bin
 # sudo cp tmux/ide.sh /usr/local/bin/ide
 
-# git-cz (using commitizen instead)
-# npm install -g git-cz
+# git-cz
+npm install -g git-cz
 
 # cleanup
 brew cleanup
