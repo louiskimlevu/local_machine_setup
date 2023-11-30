@@ -41,6 +41,9 @@ print_sep "Installing diff-so-fancy"
 brew install diff-so-fancy
 print_sep "Installing lazygit"
 brew install lazygit
+print_sep "Installing sourcetree"
+brew install --cask sourcetree
+
 print_sep "Installing gh"
 brew install gh
 print_sep "Installing git-credential-manager"
