@@ -35,8 +35,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # Terminal
 print_sep "Installing iterm2"
 brew install --cask iterm2
+print_sep "Installing powerlevel10k"
+brew install powerlevel10k
 print_sep "Installing git"
 brew install git
+
+# git
 print_sep "Installing diff-so-fancy"
 brew install diff-so-fancy
 print_sep "Installing lazygit"
@@ -127,6 +131,8 @@ print_sep "Installing istio"
 brew install istioctl
 
 # Programming
+print_sep "Installing Bazel"
+brew install basel
 print_sep "Installing Postman"
 brew install --cask postman
 print_sep "Installing visual-studio-code"
@@ -150,6 +156,10 @@ brew install --cask pgadmin4
 # print_sep "Installing mas"
 # brew install mas
 # mas install $(mas search xcode | awk '$2=="Xcode" {print $1}')
+print_sep "Installing golang"
+brew install golang
+print_sep "Installing goenv"
+brew install goenv
 
 # Networking
 print_sep "Installing Wireshark"
@@ -176,7 +186,6 @@ brew install --cask messenger
 # brew install --cask discord
 # print_sep "Installing zoom"
 # brew install --cask zoom
-
 # Mac only
 # print_sep "Installing istat-menus"
 # brew install --cask istat-menus
